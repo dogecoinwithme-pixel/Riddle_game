@@ -1,0 +1,23 @@
+# Core dependencies for the Riddle Game
+Pillow>=10.0.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-html>=3.1.0
+allure-pytest>=2.12.0
+
+# Automation and reporting dependencies
+pydrive2>=1.15.0
+smtplib-ssl
+
+# Performance testing
+locust>=2.17.0
+
+# Security scanning
+bandit>=1.7.0
+
+# ML experiment tracking
+mlflow>=2.8.0
+
+# Additional utilities
+pathlib2>=2.3.0
