@@ -1,0 +1,773 @@
+{
+  "errors": [],
+  "generated_at": "2025-08-28T17:13:57Z",
+  "metrics": {
+    "/home/runner/work/Riddle_game/Riddle_game/RiddleZone.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 106,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "/home/runner/work/Riddle_game/Riddle_game/tests/conftest.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 24,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py": {
+      "CONFIDENCE.HIGH": 17,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 17,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 126,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py": {
+      "CONFIDENCE.HIGH": 18,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 18,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 104,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 35,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 35,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 360,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "23                 import riddles_data\n24                 assert hasattr(riddles_data, 'riddles'), \"Module should contain riddles data\"\n25                 assert hasattr(riddles_data, 'validate_start'), \"Module should contain validate_start function\"\n",
+      "col_offset": 16,
+      "end_col_offset": 93,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 24,
+      "line_range": [
+        24
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "24                 assert hasattr(riddles_data, 'riddles'), \"Module should contain riddles data\"\n25                 assert hasattr(riddles_data, 'validate_start'), \"Module should contain validate_start function\"\n26                 assert hasattr(riddles_data, 'check_answer'), \"Module should contain check_answer function\"\n",
+      "col_offset": 16,
+      "end_col_offset": 111,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 25,
+      "line_range": [
+        25
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "25                 assert hasattr(riddles_data, 'validate_start'), \"Module should contain validate_start function\"\n26                 assert hasattr(riddles_data, 'check_answer'), \"Module should contain check_answer function\"\n27         except ImportError as e:\n",
+      "col_offset": 16,
+      "end_col_offset": 107,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 26,
+      "line_range": [
+        26
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "39                 valid, msg = validate_start(\"TestUser\", \"25\")\n40                 assert valid, f\"Valid input should pass: {msg}\"\n41                 \n",
+      "col_offset": 16,
+      "end_col_offset": 63,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 40,
+      "line_range": [
+        40
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "50                     valid, msg = validate_start(name, age)\n51                     assert not valid, f\"Invalid input should fail: {name}, {age}\"\n52             \n",
+      "col_offset": 20,
+      "end_col_offset": 81,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 51,
+      "line_range": [
+        51
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "54                 # Test correct answer\n55                 assert check_answer(\"phone\", \"phone\"), \"Exact match should work\"\n56                 assert check_answer(\" PHONE \", \"phone\"), \"Case and whitespace should be handled\"\n",
+      "col_offset": 16,
+      "end_col_offset": 80,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 55,
+      "line_range": [
+        55
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "55                 assert check_answer(\"phone\", \"phone\"), \"Exact match should work\"\n56                 assert check_answer(\" PHONE \", \"phone\"), \"Case and whitespace should be handled\"\n57                 assert not check_answer(\"wrong\", \"phone\"), \"Wrong answer should fail\"\n",
+      "col_offset": 16,
+      "end_col_offset": 96,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 56,
+      "line_range": [
+        56
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "56                 assert check_answer(\" PHONE \", \"phone\"), \"Case and whitespace should be handled\"\n57                 assert not check_answer(\"wrong\", \"phone\"), \"Wrong answer should fail\"\n58                 \n",
+      "col_offset": 16,
+      "end_col_offset": 85,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 57,
+      "line_range": [
+        57
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "60                 result = calculate_score(15, 20)\n61                 assert result['score'] == 15, \"Score should be preserved\"\n62                 assert result['total'] == 20, \"Total should be preserved\"\n",
+      "col_offset": 16,
+      "end_col_offset": 73,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 61,
+      "line_range": [
+        61
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "61                 assert result['score'] == 15, \"Score should be preserved\"\n62                 assert result['total'] == 20, \"Total should be preserved\"\n63                 assert result['percentage'] == 75.0, \"Percentage should be calculated correctly\"\n",
+      "col_offset": 16,
+      "end_col_offset": 73,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 62,
+      "line_range": [
+        62
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "62                 assert result['total'] == 20, \"Total should be preserved\"\n63                 assert result['percentage'] == 75.0, \"Percentage should be calculated correctly\"\n64                     \n",
+      "col_offset": 16,
+      "end_col_offset": 96,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 63,
+      "line_range": [
+        63
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "80                 # Test correct answer\n81                 assert check_answer(correct_answer, correct_answer), \"Correct answer should match\"\n82                 \n",
+      "col_offset": 16,
+      "end_col_offset": 98,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 81,
+      "line_range": [
+        81
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "84                 wrong_answer = \"definitely_wrong_answer\"\n85                 assert not check_answer(wrong_answer, correct_answer), \"Wrong answer should not match\"\n86                 \n",
+      "col_offset": 16,
+      "end_col_offset": 102,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 85,
+      "line_range": [
+        85
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "106                 \n107                 assert import_time < 1.0, f\"Riddle import took {import_time:.3f}s, should be under 1s\"\n108                 \n",
+      "col_offset": 16,
+      "end_col_offset": 102,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 107,
+      "line_range": [
+        107
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "116                 \n117                 assert access_time < 0.1, f\"1000 riddle accesses took {access_time:.3f}s, should be under 0.1s\"\n118                 \n",
+      "col_offset": 16,
+      "end_col_offset": 111,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 117,
+      "line_range": [
+        117
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "143                 # The game should handle these inputs gracefully\n144                 assert isinstance(sanitized, str), \"Input should remain a string after sanitization\"\n145         \n",
+      "col_offset": 16,
+      "end_col_offset": 100,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 144,
+      "line_range": [
+        144
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "159                     # Should either convert properly or raise ValueError\n160                     assert isinstance(age, int), \"Age should be converted to integer\"\n161                 except (ValueError, TypeError):\n",
+      "col_offset": 20,
+      "end_col_offset": 85,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_integration.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 160,
+      "line_range": [
+        160
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "29         \"\"\"Test that riddles have the required structure.\"\"\"\n30         assert isinstance(riddles, list), \"Riddles should be a list\"\n31         assert len(riddles) > 0, \"Riddles list should not be empty\"\n",
+      "col_offset": 8,
+      "end_col_offset": 68,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 30,
+      "line_range": [
+        30
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "30         assert isinstance(riddles, list), \"Riddles should be a list\"\n31         assert len(riddles) > 0, \"Riddles list should not be empty\"\n32         \n",
+      "col_offset": 8,
+      "end_col_offset": 67,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 31,
+      "line_range": [
+        31
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "34             with allure.step(f\"Validating riddle {i+1}\"):\n35                 assert isinstance(riddle, dict), f\"Riddle {i+1} should be a dictionary\"\n36                 assert \"question\" in riddle, f\"Riddle {i+1} should have a 'question' field\"\n",
+      "col_offset": 16,
+      "end_col_offset": 87,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 35,
+      "line_range": [
+        35
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "35                 assert isinstance(riddle, dict), f\"Riddle {i+1} should be a dictionary\"\n36                 assert \"question\" in riddle, f\"Riddle {i+1} should have a 'question' field\"\n37                 assert \"answer\" in riddle, f\"Riddle {i+1} should have an 'answer' field\"\n",
+      "col_offset": 16,
+      "end_col_offset": 91,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 36,
+      "line_range": [
+        36
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "36                 assert \"question\" in riddle, f\"Riddle {i+1} should have a 'question' field\"\n37                 assert \"answer\" in riddle, f\"Riddle {i+1} should have an 'answer' field\"\n38                 assert \"hint\" in riddle, f\"Riddle {i+1} should have a 'hint' field\"\n",
+      "col_offset": 16,
+      "end_col_offset": 88,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 37,
+      "line_range": [
+        37
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "37                 assert \"answer\" in riddle, f\"Riddle {i+1} should have an 'answer' field\"\n38                 assert \"hint\" in riddle, f\"Riddle {i+1} should have a 'hint' field\"\n39     \n",
+      "col_offset": 16,
+      "end_col_offset": 83,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "45             with allure.step(f\"Checking content quality for riddle {i+1}\"):\n46                 assert len(riddle[\"question\"]) > 10, f\"Riddle {i+1} question should be meaningful\"\n47                 assert len(riddle[\"answer\"]) > 0, f\"Riddle {i+1} should have an answer\"\n",
+      "col_offset": 16,
+      "end_col_offset": 98,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 46,
+      "line_range": [
+        46
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "46                 assert len(riddle[\"question\"]) > 10, f\"Riddle {i+1} question should be meaningful\"\n47                 assert len(riddle[\"answer\"]) > 0, f\"Riddle {i+1} should have an answer\"\n48                 assert len(riddle[\"hint\"]) > 5, f\"Riddle {i+1} hint should be helpful\"\n",
+      "col_offset": 16,
+      "end_col_offset": 87,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 47,
+      "line_range": [
+        47
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "47                 assert len(riddle[\"answer\"]) > 0, f\"Riddle {i+1} should have an answer\"\n48                 assert len(riddle[\"hint\"]) > 5, f\"Riddle {i+1} hint should be helpful\"\n49                 assert riddle[\"question\"].endswith(\"?\"), f\"Riddle {i+1} question should end with ?\"\n",
+      "col_offset": 16,
+      "end_col_offset": 86,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 48,
+      "line_range": [
+        48
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "48                 assert len(riddle[\"hint\"]) > 5, f\"Riddle {i+1} hint should be helpful\"\n49                 assert riddle[\"question\"].endswith(\"?\"), f\"Riddle {i+1} question should end with ?\"\n50     \n",
+      "col_offset": 16,
+      "end_col_offset": 99,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 49,
+      "line_range": [
+        49
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "57                 answer = riddle[\"answer\"]\n58                 assert answer == answer.lower(), f\"Riddle {i+1} answer should be lowercase\"\n59                 assert \" \" not in answer or \"_\" in answer, f\"Riddle {i+1} multi-word answers should use underscores\"\n",
+      "col_offset": 16,
+      "end_col_offset": 91,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 58,
+      "line_range": [
+        58
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "58                 assert answer == answer.lower(), f\"Riddle {i+1} answer should be lowercase\"\n59                 assert \" \" not in answer or \"_\" in answer, f\"Riddle {i+1} multi-word answers should use underscores\"\n60 \n",
+      "col_offset": 16,
+      "end_col_offset": 116,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 59,
+      "line_range": [
+        59
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "72             for age in valid_ages:\n73                 assert age >= 21, f\"Age {age} should be valid\"\n74         \n",
+      "col_offset": 16,
+      "end_col_offset": 62,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 73,
+      "line_range": [
+        73
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "77             for age in invalid_ages:\n78                 assert age < 21, f\"Age {age} should be invalid\"\n79     \n",
+      "col_offset": 16,
+      "end_col_offset": 63,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 78,
+      "line_range": [
+        78
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "88             perfect_score = total_riddles\n89             assert perfect_score <= total_riddles, \"Perfect score should not exceed total riddles\"\n90         \n",
+      "col_offset": 12,
+      "end_col_offset": 98,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 89,
+      "line_range": [
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "92             partial_score = total_riddles // 2\n93             assert 0 <= partial_score <= total_riddles, \"Partial score should be within valid range\"\n94 \n",
+      "col_offset": 12,
+      "end_col_offset": 100,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 93,
+      "line_range": [
+        93
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "107         with allure.step(\"Checking question uniqueness\"):\n108             assert len(questions) == len(set(questions)), \"All questions should be unique\"\n109         \n",
+      "col_offset": 12,
+      "end_col_offset": 90,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 108,
+      "line_range": [
+        108
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "127         with allure.step(f\"Checking riddle count: expected {expected_count}, actual {actual_count}\"):\n128             assert actual_count == expected_count, f\"Expected {expected_count} riddles, but found {actual_count}\"\n",
+      "col_offset": 12,
+      "end_col_offset": 113,
+      "filename": "/home/runner/work/Riddle_game/Riddle_game/tests/test_riddle_game.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 128,
+      "line_range": [
+        128
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    }
+  ]
+}
